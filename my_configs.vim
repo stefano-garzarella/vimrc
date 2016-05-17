@@ -13,7 +13,7 @@ function! LoadCscope()
 endfunction
 au BufEnter /* call LoadCscope()
 
-" ctags support 
+" ctags support
 set tags+=./tags;/,tags;/
 set tags+=/var/tmp/tags
 
@@ -42,10 +42,12 @@ set preserveindent
 "
 let g:gitgutter_enabled = 1
 
+" YouCompleteMe parameters
 let g:ycm_confirm_extra_conf = 0
 nnoremap <leader>yd :YcmCompleter GetDoc<CR>
 nnoremap <leader>yt :YcmCompleter GetType<CR>
 nnoremap <leader>yg :YcmCompleter GoTo<CR>
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 filetype plugin indent on
 

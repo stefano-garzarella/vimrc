@@ -20,3 +20,14 @@ cd sources_non_forked/YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer
 cd $ORIG_DIR 
+
+
+https://github.com/bronson/vim-trailing-whitespace.git
+if [ -e sources_non_forked/vim-trailing-whitespace/.git ]; then
+    git pull --rebase
+else
+    git clone https://github.com/bronson/vim-trailing-whitespace sources_non_forked/vim-trailing-whitespace
+fi
+cd sources_non_forked/vim-trailing-whitespace
+git submodule update --init --recursive
+cd $ORIG_DIR
