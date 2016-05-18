@@ -48,6 +48,7 @@ nnoremap <leader>yd :YcmCompleter GetDoc<CR>
 nnoremap <leader>yt :YcmCompleter GetType<CR>
 nnoremap <leader>yg :YcmCompleter GoTo<CR>
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_global_ycm_extra_conf = "/home/stefano/.vim_runtime/sources_non_forked/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
 filetype plugin indent on
 
